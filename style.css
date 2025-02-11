@@ -1,0 +1,29 @@
+.contenedor {
+    display: flex;
+    justify-content: center; /* Espaciado uniforme */
+    align-items: center; /* Alineación vertical */
+    gap: 10px; /* Espacio entre imágenes */
+}
+
+.contenedor img {
+    
+    height: auto; /* Mantiene la proporción */
+    object-fit: cover; /* Evita deformaciones */
+    width: 100%; /* Ocupar todo el ancho disponible */
+height: 100vh; /* Ocupar toda la altura de la pantalla */
+}
+
+body{
+    background-color:rgb(237, 208, 168);
+}
+ 
+.parrafo
+{
+padding: 35px;
+text-align: justify;
+width: 100%; /* Ocupar todo el ancho disponible */
+height: 100vh; /* Ocupar toda la altura de la pantalla */
+box-sizing: border-box;
+
+
+}
