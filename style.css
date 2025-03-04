@@ -1,29 +1,319 @@
-.contenedor {
-    display: flex;
-    justify-content: center; /* Espaciado uniforme */
-    align-items: center; /* Alineación vertical */
-    gap: 10px; /* Espacio entre imágenes */
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-.contenedor img {
-    
-    height: auto; /* Mantiene la proporción */
-    object-fit: cover; /* Evita deformaciones */
-    width: 100%; /* Ocupar todo el ancho disponible */
-height: 100vh; /* Ocupar toda la altura de la pantalla */
-}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", serif;
+    box-sizing: border-box;
+    text-decoration:none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth
 
+}
 body{
-    background-color:rgb(237, 208, 168);
+    background-color: rgb(221, 220, 220);
 }
- 
-.parrafo
-{
-padding: 35px;
-text-align: justify;
-width: 100%; /* Ocupar todo el ancho disponible */
-height: 100vh; /* Ocupar toda la altura de la pantalla */
-box-sizing: border-box;
+.header{
+    background-color: rgb(190, 187, 187);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+    padding: 0 10%;
+  
+}
 
+.header .nav-links{
+    list-style: none;
+
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+  
+}
+
+.header .nav-links li{
+    display:inline-block;
+    padding: 0 20px;
+    text-align: right;
+}
+.header .nav-links a{
+    font-size: 700;
+    color: #44566a;
+    text-decoration: none;
+}
+
+.paragraph{
+    font-size: 20px;
+    padding: 250px;
+    text-align:left;
+    width: 100%; /* Ocupar todo el ancho disponible */
+    height: 100vh; /* Ocupar toda la altura de la pantalla */
+    color: #393939;
+    
+
+}
+.container-2{
+    background-color:#263550;
+    width: 30%;
+    color: aliceblue;
+    padding: 60px;
+    text-align: center;
+  
+ 
+}
+.container-home{
+    display: flex;
+}
+.imagen{
+    height: 200px;
+    width: 90%;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+.name{
+    font-size: 25px;
+    padding: 20px;
+    font-family: "Montserrat", serif;
+
+}
+
+.page-portfolio{
+    background-color: white;
+   padding: 130px;
+}
+h3{
+    font-size: 25px;
+    color: #263550;
+}
+.img2{
+    width: 350px;
+    height: 250px;
+    object-fit:fill;
+    padding: 10px;
+    margin: 20px;
+    border-bottom: 2px solid #263550 ;
+    border-top: 2px solid #263550 ;
+
+}
+
+
+.img2:hover{
+    border-top: 5px solid #263550;    
+    border-bottom: 5px solid #263550; 
+    
+}
+
+
+.portfolio-imagen{
+    display: flex;
+    justify-content: center;
+  
+}
+
+.proyect{
+    font-size: 25px;
+    padding: 50px;
+    color: #263550;
+    text-align: center;
+    
+}
+.tex-center{
+    color: #4d535c;
+    text-align: center;
+    
+}
+
+.paragraph2{
+ padding: 30px;
+ justify-content: center;
+ color: #7e8083;
+ text-align: center;
+
+}
+
+.page-experience{
+    display: flex;
+
+   
+}
+
+.page-experience .exp{
+    margin: 50px 150px;
+    text-align: left;
+    width: 100%; /* Ocupar todo el ancho disponible */
+
+}
+
+.page-experience .exh2{
+    font-family: "Montserrat", sans-serif; 
+    font-size: 30px; 
+    font-weight:600;
+    color:#263550; 
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.page-experience .exh3{
+    font-family: "Montserrat", sans-serif; 
+    font-size: 18px; 
+    font-weight: normal; 
+    color: #4d535c; 
+    letter-spacing: 1px; 
+}
+
+.coursera{
+    margin: 50px 5px;
+    text-align: left;
+    width: 100%; /* Ocupar todo el ancho disponible */
+}
+
+.courserah4{
+    font-size: 20px;
+    font-weight:500;
+    color: #263550; 
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+.courserah5{
+    font-size: 18px;
+    font-weight:200;
+    color: #000000; 
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+.courserahttp{
+    font-size: 18px;
+    font-weight:200;
+    color: #494848; 
+    letter-spacing: 1px; /* Espaciado entre letras */
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+
+
+}
+
+.page-experience .exp2{
+    margin: 50px 5px;
+    text-align: left;
+    width: 100%; /* Ocupar todo el ancho disponible */
+
+}
+
+.title{
+    padding: 30px;
+    color: #263550;
+    text-align: center;
+   
+}
+
+.product{
+    padding: 20px;
+    color: #263550;
+    text-align: left;
+    margin: 0px 100px;
+    line-height: 25px;
+    
+
+    
+}
+.paragraph1-page2{
+    background-color: white;
+    padding: 50px;
+}
+.paragraph2-page2{
+    background-color:#f8f9fa;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+    gap: 20px; /* Espacio entre columnas */
+   width: 100%;
+}
+
+.product-page2{
+    padding: 20px;
+    color: #000000;
+    text-align: left;
+    margin: 0px 50px;
+    line-height: 25px;
+}
+
+.paragraph3-page2{
+    padding: 100px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+
+}
+
+.img-problem{
+    width: 500px;
+    height: 300px;
+    object-fit:contain;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra básica */
+}
+
+.scheme-page2{
+    padding: 100px;
+    background-color: #f8f9fa;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+}
+
+.page-img{
+    width: 400px;
+    height: 200px;
+    object-fit:contain;
+    margin: 50px 0;
+    
+}
+
+.paragraph4-page2{
+    padding: 100px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+}
+.product-fideli{
+    padding: 40px 20px;
+    color: #263550;
+    text-align: left;
+    margin: 0px 100px;
+    line-height: 25px;
+}
+
+.prototip{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    white-space: nowrap;
+    width: 40%; 
+    margin: 0 auto; 
+   
+}
+
+.last-container{
+    background-color: #263550;
+    text-align: center;
+    padding: 80px;
+    color: #f8f9fa;
+}
+
+.resume{
+    text-align: center;
+    padding: 90px;
+    background-color: #263550;
+    color: aliceblue;
+    
+
+}
+
+.paragraph5-page2{
+    padding: 100px;
+    background-color: #f8f9fa;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
 
 }
